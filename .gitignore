@@ -1,0 +1,13 @@
+# R
+.Rhistory
+.Rdata
+.RData
+.Rproj.user/
+*.Rproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Shiny
+rsconnect/
