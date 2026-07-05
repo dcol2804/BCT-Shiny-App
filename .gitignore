@@ -11,3 +11,6 @@ Thumbs.db
 
 # Shiny
 rsconnect/
+
+# Generated reports
+duplicate_species_report.csv

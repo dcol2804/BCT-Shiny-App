@@ -17,7 +17,7 @@ wants to inspect or download it directly, with columns:
 | Column | Description |
 |---|---|
 | `Scientific_Name` | Species name as it appears in the source bioregion spreadsheet |
-| `sig` | Significance rating (see Rehwinkel, 2015) |
+| `sig` | Significance rating (see [Rehwinkel, 2015](#references)) |
 | `Bioregion` | Bioregion code (see table below) |
 | `conditions` | Native/exotic status or cover-dependent scoring condition, where applicable |
 | `speciesID` | BioNet `currentScientificNameCode` |
@@ -79,7 +79,7 @@ Bioregion codes are as follows:
 
 A reference list of species in the various grassland bioregions of NSW is
 stored as part of the app (see [`reference_list.csv`](reference_list.csv)).
-Each species has a significance rating as described in Rehwinkel (2015) and
+Each species has a significance rating as described in [Rehwinkel (2015)](#references) and
 their corresponding `currentScientificName` code for easy comparison with any
 input data. Changes to this reference list, e.g. altering species
 significance ratings or adding new species, can only be made by an app
@@ -165,3 +165,15 @@ pressed:
 2. Check the column headers of your data.
 3. If the problem persists, send the data file with an explanation of the
    problem to the app administrator: dave.r.coleman@gmail.com.
+
+## Citing this app
+
+Coleman, D. (2026). *BCT-Shiny-App: Floristic Value Scoring App*. GitHub
+repository, https://github.com/dcol2804/BCT-Shiny-App
+
+## References
+
+Rehwinkel, R. (2015). A revised floristic value scoring method to assess
+grassland condition. *Grass Half Full or Grass Half Empty*. Community
+(Environment ACT 2005).
+[PDF](https://www.fog.org.au/Articles/2014%20forum/Rehwinkel,%20Revised%20Floristic%20Value%20Scoring%20Method%20for%20grassland%20condition.pdf)
