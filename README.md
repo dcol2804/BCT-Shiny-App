@@ -3,24 +3,8 @@
 A Shiny app that calculates a **Floristic Value Score (FVS)** from field survey
 data, using an inventory of species in grassland bioregions around NSW.
 
-## Repository structure
 
-```
-grasslands_final_2026_June/
-├── Shiny_monaro.R          # Shiny UI + server (run this to launch the app)
-├── monaro.R                # Reference list compilation + FVS calculation logic
-├── Install_packages.R      # One-off script to install required R packages
-├── Bionet_SpeciesNames.csv # BioNet species name / code lookup table
-├── weight.csv              # Significance-rating x cover/abundance weighting table
-├── reference_list.csv      # Compiled species reference list (see below) — downloadable
-├── raw_data/                # Source spreadsheets used to build the reference list
-│   ├── FVS_WVS_BBS_v1_2015_7_6.xlsx
-│   ├── FVS_WVS_Riverina_v1_2015_8_12.xlsx
-│   ├── FVS_WVS_SEH_Monaro_v2.0_2021_09_08.xlsx
-│   ├── FVS_WVS_SEH_non-Monaro_v2.0_2021_01_15.xlsx
-│   └── FVS_WVS_SWS_v2.0_RR_20220707.xlsx
-└── www/                     # App images (logo, example screenshot)
-```
+#### Repository structure
 
 ### Reference list (`reference_list.csv`)
 
@@ -57,9 +41,6 @@ an app administrator.
 5. A button should appear in the top right of the script panel that says
    **Run App**. Click it and the app should open in a new window / your
    default web browser.
-
-If you wish to publish the app for others to use, RStudio offers a free
-hosting platform ([shinyapps.io](https://www.shinyapps.io/)).
 
 ## App quickstart guide
 
