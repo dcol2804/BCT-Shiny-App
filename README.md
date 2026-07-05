@@ -1,4 +1,4 @@
-# Floristic Value Scoring App (June 2026)
+# Floristic Value Scoring App
 
 A Shiny app that calculates a **Floristic Value Score (FVS)** from field survey
 data, using an inventory of species in grassland bioregions around NSW.
