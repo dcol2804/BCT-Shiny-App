@@ -3,32 +3,6 @@
 A Shiny app that calculates a **Floristic Value Score (FVS)** from field survey
 data, using an inventory of species in grassland bioregions around NSW.
 
-
-#### Repository structure
-
-### Reference list (`reference_list.csv`)
-
-A reference list of species in the various grassland bioregions of NSW is
-compiled from the spreadsheets in `raw_data/` (one per bioregion) and is used
-internally by the app to score uploaded survey data. `reference_list.csv` in
-the repo root is that compiled list, provided as a plain CSV for anyone who
-wants to inspect or download it directly, with columns:
-
-| Column | Description |
-|---|---|
-| `Scientific_Name` | Species name as it appears in the source bioregion spreadsheet |
-| `sig` | Significance rating (see [Rehwinkel, 2015](#references)) |
-| `Bioregion` | Bioregion code (see table below) |
-| `conditions` | Native/exotic status or cover-dependent scoring condition, where applicable |
-| `speciesID` | BioNet `currentScientificNameCode` |
-| `currentScientificName` | Current accepted scientific name per BioNet |
-| `combo` | `speciesID` and `Bioregion` combined (e.g. `3626_BBS`) — the key used to match uploaded data against this reference list |
-
-Changes to the reference list (e.g. altering species significance ratings or
-adding new species) require editing the source spreadsheets in `raw_data/`
-and re-running the compilation step in `monaro.R`, and should only be made by
-an app administrator.
-
 ## To run the app in RStudio, locally on your machine
 
 1. Download and unzip (or `git clone`) this repository.
@@ -53,7 +27,12 @@ an app administrator.
 
 Full explanations of each step are in the User Guide below.
 
-## User guide
+## Citing this app
+
+Coleman, D. (2026). BCT-Shiny-App: Floristic Value Scoring Application [Computer software]. GitHub. https://github.com/dcol2804/BCT-Shiny-App
+
+
+## User guide details
 
 The app calculates a floristic value score from field survey data, using an
 inventory of species in grassland bioregions around NSW.
@@ -84,6 +63,11 @@ their corresponding `currentScientificName` code for easy comparison with any
 input data. Changes to this reference list, e.g. altering species
 significance ratings or adding new species, can only be made by an app
 administrator.
+
+Changes to the reference list (e.g. altering species significance ratings or
+adding new species) require editing the source spreadsheets in `raw_data/`
+and re-running the compilation step in `monaro.R`, and should only be made by
+an app administrator.
 
 ### Uploading data
 
@@ -165,11 +149,6 @@ pressed:
 2. Check the column headers of your data.
 3. If the problem persists, send the data file with an explanation of the
    problem to the app administrator: dave.r.coleman@gmail.com.
-
-## Citing this app
-
-Coleman, D. (2026). *BCT-Shiny-App: Floristic Value Scoring App*. GitHub
-repository, https://github.com/dcol2804/BCT-Shiny-App
 
 ## References
 
